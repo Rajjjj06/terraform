@@ -1,0 +1,30 @@
+# Terraform working directories and generated plans
+.terraform/
+*.tfplan
+*.tfplan.json
+tfplan
+
+# Terraform state and variable files may contain credentials or infrastructure data
+*.tfstate
+*.tfstate.*
+*.tfvars
+*.tfvars.json
+!*.tfvars.example
+
+# Local tooling and operating-system files
+.terraformrc
+terraform.rc
+.DS_Store
+Thumbs.db
+
+# Node.js dependencies and local environment files
+node_modules/
+.env
+.env.*
+!.env.example
+
+# Python virtual environments and caches
+.venv/
+venv/
+__pycache__/
+*.py[cod]
