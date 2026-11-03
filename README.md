@@ -1,5 +1,16 @@
 # Flask and Express AWS Deployments with Terraform
 
+## Project repository
+
+The complete source code and latest project files are available on GitHub:
+
+<https://github.com/Rajjjj06/terraform>
+
+The compressed submission may contain only the required Terraform files because
+Terraform provider binaries and generated state files can make the archive
+larger than the submission limit. These generated files are intentionally
+excluded from the repository and can be recreated with `terraform init`.
+
 This project demonstrates three ways to deploy the same Flask backend and Express frontend on AWS:
 
 1. Both applications on one EC2 instance.
@@ -15,17 +26,23 @@ The applications use these ports:
 
 The screenshots in the project show the frontend form, successful submission page, and backend JSON responses.
 
+> **Submission note:** The GitHub repository is the authoritative copy of the
+> project. Large Terraform provider downloads, Terraform state files, and
+> environment-specific variable files are not included in the compressed
+> submission.
+
 ## Repository layout
 
 ```text
-backend/                  Flask application and backend Dockerfile
-frontend/                 Express application, Dockerfile, and EJS views
 part-1/                   One EC2 instance deployment
 part-2/                   Two EC2 instance deployment
 part-3/                   ECS Fargate, VPC, security groups, service discovery, and ALB
 ```
 
-Each Terraform part is independent. Run Terraform from the selected part directory, not from the repository root.
+This reduced submission contains the Terraform deployment definitions. Each
+Terraform part is independent; run Terraform from the selected part directory,
+not from the repository root. The application source and Docker build context
+can be restored from the linked GitHub repository when needed.
 
 ## Prerequisites
 
